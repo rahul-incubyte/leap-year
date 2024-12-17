@@ -10,6 +10,8 @@ class LeapYear
       false
     elsif @year % 4 == 0
       true
+    else
+      false
     end
   end
 end
