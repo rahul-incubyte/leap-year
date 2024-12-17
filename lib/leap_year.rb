@@ -4,6 +4,6 @@ class LeapYear
   end
 
   def leap_year?
-    
+    @year % 4 == 0
   end
 end
