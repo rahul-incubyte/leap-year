@@ -13,4 +13,8 @@ RSpec.describe LeapYear do
   it "is a leap year if divisble by 400" do
     expect(described_class.new(1200)).to be_leap_year
   end
+
+  it "is not a leap year if divisble by 100" do
+    expect(described_class.new(500)).not_to be_leap_year
+  end
 end
